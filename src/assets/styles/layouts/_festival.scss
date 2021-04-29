@@ -1,0 +1,45 @@
+.cover{
+  display: block;
+  width: 70%;
+  margin:auto;
+  @include for-tablet {
+    width: 50%;
+  }
+  @include for-pc {
+    width: 30%;
+  }
+}
+.fest{
+  display: block;
+  width: 95%;
+  margin:auto;
+  @include for-tablet {
+    width: 90%;
+  }
+}
+
+.content-text{
+  display: flex;
+  flex-direction: column;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+.first-text{
+  margin-right: 10%;
+  margin-left: 10%;
+  font-size: $iron-festival-font-md;
+  font-style: italic;
+
+}
+.text{
+  margin-right: 10%;
+  margin-left: 10%;
+  font-size: $iron-festival-font-sm;
+}
+.content-text__left{
+  font-size: $iron-festival-font-md;
+  font-style: italic;
+}
+.content-text__right{
+  font-size: $iron-festival-font-sm;
+}

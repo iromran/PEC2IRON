@@ -1,0 +1,13 @@
+.main-content__form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10%;
+  border-color: $iron-silver;
+  border-style: solid;
+  border-radius: 4px;
+}
+.main-content__p{
+  margin: 20px;
+}

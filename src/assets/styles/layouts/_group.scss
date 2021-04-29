@@ -1,0 +1,52 @@
+img{
+  padding:1vh;
+}
+h2{
+  text-align: center;
+}
+.flex-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $iron-main;
+  &__line {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__card {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  &__title {
+    color: $iron-principal;
+    text-align: center;
+  }
+  &__desc {
+    color: $iron-principal;
+  }
+
+  @include for-tablet {
+    margin-right: 10%;
+    margin-left: 10%;
+    &__line {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+  @include for-pc {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: initial;
+    background-color: $iron-main;
+    &__line {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 20px;
+    }
+  }
+}
