@@ -3,6 +3,12 @@ body {
     color: $iron-font;
     background-color: $iron-bg;
   }
+header{
+    background-color: $iron-principal;
+}
+footer{
+    background-color: $iron-principal;
+}
 .logo {
   display: block;
   margin: auto;
@@ -10,12 +16,6 @@ body {
     width: 300px;
     height: auto;
   }    
-}
-header{
-    background-color: $iron-principal;
-}
-footer{
-    background-color: $iron-principal;
 }
 .main-content{
   padding: 20px;

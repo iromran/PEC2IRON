@@ -1,4 +1,4 @@
-.cover{
+.main-content__cover{
   display: block;
   width: 70%;
   margin:auto;
@@ -9,7 +9,7 @@
     width: 30%;
   }
 }
-.fest{
+.main-content__fest{
   display: block;
   width: 95%;
   margin:auto;
@@ -17,21 +17,19 @@
     width: 90%;
   }
 }
-
 .content-text{
   display: flex;
   flex-direction: column;
   margin-right: 10%;
   margin-left: 10%;
 }
-.first-text{
+.main-content__first-text{
   margin-right: 10%;
   margin-left: 10%;
   font-size: $iron-festival-font-md;
   font-style: italic;
-
 }
-.text{
+.main-content__text{
   margin-right: 10%;
   margin-left: 10%;
   font-size: $iron-festival-font-sm;

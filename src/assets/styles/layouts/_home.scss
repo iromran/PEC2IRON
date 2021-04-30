@@ -7,12 +7,17 @@
     margin-left: 10%;
   }
 }
-
 .poster{
   background: url("../images/iron.jpg") no-repeat;
   background-position: right top;
-  background-size: cover;
-  
+  background-size: cover;  
+}
+.poster__ul {
+  margin-bottom: 0px;
+}
+.poster__li-first{
+  padding-bottom: 30vw;
+  list-style-type: none;
 }
 .poster__li{
   width: 95%;
@@ -25,31 +30,38 @@
   border-color: $iron-silver;
   border-style: solid;
   border-radius: 4px;
+  p{
+    margin-top: -6px;
+    margin-bottom: 5px;
+    font-size: $iron-home-font-sm;
+  }
   h3{
-    font-size: $iron-home-font-mdb;
+    margin-top: -6px;
+    font-size: $iron-home-font-sm;
   }
   h5{
-    font-size: $iron-home-font-md;
+    margin: auto;
+    font-size: $iron-home-font-sm;
   }
   @include for-tablet {
+    margin-right: none;
     font-size: $iron-home-font-mdb;
+    p{
+      margin-top: 0.5vh;
+      margin-bottom: none;
+      font-size: $iron-home-font-mdb;
+    }
     h3{
       font-size: $iron-home-font-sb;
     }
     h5{
+      margin-top: 1.5vh;
       font-size: $iron-home-font-bg;
     }
   }
   @include for-pc {
     width: 35vw;
   }
-}
-.poster__li-first{
-  padding-bottom: 30vw;
-  list-style-type: none;
-}
-.poster__ul {
-  margin-bottom: 0px;
 }
 
 @supports (display:grid) {
@@ -62,20 +74,32 @@
     height: auto;
     margin: none;
     margin-right: 10px;
-    font-size: $iron-home-font-sm;
+    p{
+      margin-top: -6px;
+      margin-bottom: 5px;
+      font-size: $iron-home-font-sm;
+    }
     h3{
-      font-size: $iron-home-font-mdb;
+      margin-top: -6px;
+      font-size: $iron-home-font-sm;
     }
     h5{
-      font-size: $iron-home-font-md;
+      margin: auto;
+      font-size: $iron-home-font-sm;
     }
     @include for-tablet {
       margin-right: none;
       font-size: $iron-home-font-mdb;
+      p{
+        margin-top: 0.5vh;
+        margin-bottom: none;
+        font-size: $iron-home-font-mdb;
+      }
       h3{
         font-size: $iron-home-font-sb;
       }
       h5{
+        margin-top: 1.5vh;
         font-size: $iron-home-font-bg;
       }
     }
